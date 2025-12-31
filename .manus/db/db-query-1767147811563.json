@@ -1,0 +1,20 @@
+{
+  "query": "SELECT * FROM inquiries ORDER BY createdAt DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3DrEtHdFZh6aMXG.d412ab258b70 --database 9DuR7iy8h75wgqWV47MbFp --execute SELECT * FROM inquiries ORDER BY createdAt DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "companyName": "テスト株式会社",
+      "name": "テスト太郎",
+      "email": "test@example.com",
+      "phone": "03-1234-5678",
+      "product": "NULL",
+      "message": "K-SLIMについて詳しく教えてください。導入を検討しています。",
+      "createdAt": "2025-12-31 02:23:02"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcompanyName\tname\temail\tphone\tproduct\tmessage\tcreatedAt\n1\tテスト株式会社\tテスト太郎\ttest@example.com\t03-1234-5678\tNULL\tK-SLIMについて詳しく教えてください。導入を検討しています。\t2025-12-31 02:23:02\n",
+  "stderr": "",
+  "execution_time_ms": 1687
+}
