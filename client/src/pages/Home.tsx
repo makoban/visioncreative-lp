@@ -503,10 +503,28 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative space-y-6">
               <GlassCard className="p-2 rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img src="/images/ai-content-creation.png" alt="AI Content Service" className="rounded-lg w-full shadow-2xl" />
               </GlassCard>
+              
+              {/* YouTube Shorts */}
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-xl">
+                <iframe
+                  className="w-full aspect-video"
+                  src="https://www.youtube.com/embed/qK_7ajGNjmw"
+                  title="AI制作事例 - YouTube Shorts"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              
+              <div className="text-center space-y-2">
+                <p className="text-white font-bold text-sm bg-gray-900 rounded-lg py-2">AI制作事例</p>
+                <p className="text-gray-600 text-xs">最新のAI技術による映像制作</p>
+              </div>
             </div>
           </div>
         </div>
