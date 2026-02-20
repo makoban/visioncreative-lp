@@ -850,22 +850,13 @@ export default function Home() {
               <h4 className="font-bold mb-4">運営会社</h4>
               <div className="text-gray-400 text-sm space-y-4">
                 <div>
-                  <p className="font-bold text-white mb-1">株式会社ビー・クリエイティブ</p>
-                  <a href="https://www.becreative.co.jp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">会社紹介サイト &rarr;</a>
+                  <p className="font-bold text-white mb-1">株式会社バンテックス</p>
+                  <a href="https://bantex.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">会社紹介サイト &rarr;</a>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-300">本社</p>
                   <p>〒468-0015</p>
                   <p>愛知県名古屋市天白区原3丁目304番1号</p>
-                  <p>T&Lビル2-A</p>
-                  <p>TEL: 052-847-7500</p>
-                  <p>FAX: 052-847-7501</p>
-                </div>
-                <div>
-                  <p className="font-bold text-gray-300">東京</p>
-                  <p>〒141-0031</p>
-                  <p>東京都品川区西五反田1-11-1</p>
-                  <p>Aios五反田駅前506</p>
+                  <p>TEL/FAX: 052-847-7501</p>
                 </div>
               </div>
             </div>
@@ -874,11 +865,11 @@ export default function Home() {
               <h4 className="font-bold mb-4">お問い合わせ</h4>
               <ul className="space-y-4 text-gray-400">
                 <li className="flex items-center">
-                  <Mail className="w-4 h-4 mr-2 text-primary" /> 
-                  <a href="mailto:visioncreative@becreative.co.jp" className="hover:text-white transition-colors">visioncreative@becreative.co.jp</a>
+                  <Mail className="w-4 h-4 mr-2 text-primary" />
+                  <a href="mailto:info@bantex.jp" className="hover:text-white transition-colors">info@bantex.jp</a>
                 </li>
                 <li className="flex items-center">
-                  <a href="https://www.becreative.co.jp" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">www.becreative.co.jp</a>
+                  <a href="https://bantex.jp/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">bantex.jp</a>
                 </li>
                 <li>
                   <a href="https://line.me/R/ti/p/@834tysvk" target="_blank" rel="noopener noreferrer" className="block bg-[#06C755] text-white text-center py-3 rounded-lg font-bold hover:bg-[#05b34c] transition-colors">
@@ -889,7 +880,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} 株式会社ビー・クリエイティブ All rights reserved.
+            &copy; {new Date().getFullYear()} 株式会社バンテックス All rights reserved.
           </div>
         </div>
       </footer>
