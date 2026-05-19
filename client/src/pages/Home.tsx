@@ -254,6 +254,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Vision Yuka Section */}
+      <section className="py-20 bg-white relative">
+        <div className="container mx-auto px-4">
+          <GlassCard className="overflow-hidden p-0">
+            <div className="grid lg:grid-cols-[1fr_0.9fr]">
+              <div className="relative min-h-[260px] lg:min-h-[420px] bg-black">
+                <img
+                  src="/images/vision-yuka-thumb.jpg"
+                  alt="Vision Yuka 床面LED防災誘導サイネージ"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-black/45"></div>
+                <span className="absolute left-6 top-6 rounded-full bg-emerald-500 px-4 py-2 text-sm font-bold text-white shadow-lg">
+                  床面LED
+                </span>
+              </div>
+              <div className="flex flex-col justify-center bg-slate-950 p-8 text-white md:p-12">
+                <p className="mb-4 text-sm font-bold tracking-[0.18em] text-emerald-300">
+                  FLOOR LED SIGNAGE
+                </p>
+                <h2 className="mb-5 text-3xl font-black leading-tight md:text-4xl">
+                  Vision Yuka
+                </h2>
+                <p className="mb-6 text-lg font-bold leading-relaxed text-white">
+                  平常時は空間演出、非常時は避難誘導へ切り替わる床面LED防災誘導サイネージ。
+                </p>
+                <p className="mb-8 leading-8 text-slate-300">
+                  ホテル、商業施設、公共施設などの床面を活用し、情報発信と防災導線を一体化します。設置場所や表示内容に合わせた導入相談も可能です。
+                </p>
+                <Button asChild size="lg" className="w-full rounded-full bg-white text-slate-950 hover:bg-emerald-100 sm:w-fit">
+                  <a href="https://vision-yuka.bantex.jp/" target="_blank" rel="noopener noreferrer">
+                    Vision Yukaを見る <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </GlassCard>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section id="products" className="py-24 bg-secondary/30 relative">
         <div className="container mx-auto px-4">
