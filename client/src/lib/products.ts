@@ -22,24 +22,24 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 'kslim',
-    name: 'KSLIM',
+    name: 'K-SLIM 2.5',
     category: 'outdoor',
-    description: '超スリムフレームの屋外自立型LED看板。精巧な仕上げと美しい外観で、店舗の顔として最適です。',
-    price_label: '30万円台〜',
+    description: 'スリムな筐体の屋外自立型LED看板。店頭に置くだけで明るく動くメニュー看板として使えます。',
+    price_label: '598,000円(税込)',
     features: [
       '防水IP65',
-      'バッテリー搭載24時間稼働',
-      '高輝度視認性が高い',
-      'スピーカー搭載',
+      '100V接続で使用',
+      'バッテリータイプ対応',
+      '全国送料込み',
       'スマホからアプリ配信'
     ],
     specs: {
       pixel_pitch: '2.5mm',
-      brightness: '≥24500 cd/㎡',
-      size: '1208.1*526.0*400MM',
-      weight: '30KG',
+      brightness: '≥4500 cd/㎡',
+      size: '1208.1×526.0×43mm（開放時）',
+      weight: '35.4KG',
       waterproof: 'IP65',
-      power: '240w/㎡ (平均)'
+      power: '100V接続'
     },
     image: '/images/catalog/001.webp',
     catalogImages: ['/images/catalog/001.webp', '/images/catalog/002.webp', '/images/catalog/003.webp'],

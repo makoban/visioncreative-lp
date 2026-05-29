@@ -10,6 +10,7 @@ export interface PriceOption {
   resolutionH: string;
   priceUSD: number;
   priceJPY: number;
+  taxLabel?: string;
   notes?: string;
 }
 
@@ -22,20 +23,21 @@ export interface ProductPricing {
 export const productPricing: Record<string, ProductPricing> = {
   kslim: {
     name: "K-SLIM（屋外）",
-    minPrice: 397440,
+    minPrice: 598000,
     options: [
       {
         model: "P2.5",
         width: "480mm",
         height: "960mm",
-        maxPower: "400W",
-        avgPower: "120W",
-        weight: "42KG",
+        maxPower: "300W",
+        avgPower: "200〜300W",
+        weight: "35.4KG",
         resolutionW: "192P",
         resolutionH: "384P",
         priceUSD: 1380,
-        priceJPY: 397440,
-        notes: "木箱、フライトケース・バッテリーはご相談ください"
+        priceJPY: 598000,
+        taxLabel: "税込・全国送料込み",
+        notes: "デビューキャンペーン価格。定価698,000円、限定100台。映像事前インストール対応。バッテリータイプは+98,000円。"
       }
     ]
   },

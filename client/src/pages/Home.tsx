@@ -177,14 +177,17 @@ export default function Home() {
             <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-bold mb-6 border border-primary/20 backdrop-blur-sm">
               小型デジタルサイネージ専門店
             </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
               店舗集客に<br />
-              <span className="text-gradient">30万円</span>からの<br />
-              デジタルサイネージ
+              <span className="text-gradient block md:inline">K-SLIM</span>
+              <span className="text-gradient block md:inline md:ml-4">59.8万円</span><br />
+              <span className="block md:inline">屋外LED</span>
+              <span className="block md:inline md:ml-4">サイネージ</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              映像も1万円から制作可能。<br className="md:hidden" />
-              全てお任せで、あなたの店舗を輝かせます。
+              映像制作も6万円〜10万円で<br className="md:hidden" />
+              対応可能。全てお任せで、<br className="md:hidden" />
+              あなたの店舗を輝かせます。
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button onClick={() => scrollToSection('products')} size="lg" className="rounded-full px-8 h-14 text-lg shadow-lg shadow-primary/25 w-full sm:w-auto">
@@ -225,9 +228,9 @@ export default function Home() {
               <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center shadow-inner">
                 <img src="/images/icon-price.png" alt="Low Price" className="w-12 h-12 object-contain" />
               </div>
-              <h3 className="text-xl font-bold mb-3">圧倒的な低価格</h3>
+              <h3 className="text-xl font-bold mb-3">K-SLIM 59.8万円(税込)</h3>
               <p className="text-muted-foreground">
-                業界常識を覆す30万円台からの導入が可能。初期投資を抑えながら、高品質なデジタルサイネージを導入できます。
+                定価698,000円をデビューキャンペーン価格598,000円で販売。全国送料込みで導入しやすい価格にしました。
               </p>
             </GlassCard>
 
@@ -235,9 +238,9 @@ export default function Home() {
               <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center shadow-inner">
                 <img src="/images/icon-speed.png" alt="Speed" className="w-12 h-12 object-contain" />
               </div>
-              <h3 className="text-xl font-bold mb-3">映像制作1万円〜</h3>
+              <h3 className="text-xl font-bold mb-3">映像制作6万円〜10万円</h3>
               <p className="text-muted-foreground">
-                映像コンテンツもAIを活用して制作するため、1万円からという低価格を実現。全てお任せでスピーディーに納品します。
+                映像コンテンツもAIを活用して制作可能。メニューやキャンペーン映像まで、全てお任せでスピーディーに納品します。
               </p>
             </GlassCard>
 
@@ -474,7 +477,7 @@ export default function Home() {
                                 <th className="text-left py-3 px-3 font-bold text-gray-700">解像度</th>
                                 <th className="text-left py-3 px-3 font-bold text-gray-700">サイズ</th>
                                 <th className="text-left py-3 px-3 font-bold text-gray-700">消費電力</th>
-                                <th className="text-right py-3 px-3 font-bold text-gray-700">価格（税抜）</th>
+                                <th className="text-right py-3 px-3 font-bold text-gray-700">価格</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -484,7 +487,10 @@ export default function Home() {
                                   <td className="py-3 px-3 text-gray-700">{option.resolutionW}×{option.resolutionH}P</td>
                                   <td className="py-3 px-3 text-gray-700 text-xs">{option.width}×{option.height}</td>
                                   <td className="py-3 px-3 text-gray-700 text-xs">平均 {option.avgPower}</td>
-                                  <td className="py-3 px-3 text-right font-bold text-primary">¥{option.priceJPY.toLocaleString('ja-JP')}</td>
+                                  <td className="py-3 px-3 text-right font-bold text-primary">
+                                    ¥{option.priceJPY.toLocaleString('ja-JP')}
+                                    <span className="block text-[11px] text-gray-500 font-medium">{option.taxLabel ?? '税抜目安'}</span>
+                                  </td>
                                 </tr>
                               ))}
                             </tbody>
@@ -872,8 +878,8 @@ export default function Home() {
                 <span className="text-xl font-bold tracking-tight">visioncreative</span>
               </div>
               <p className="text-gray-400 max-w-sm mb-6">
-                店舗集客に30万円からのデジタルサイネージ。<br />
-                映像も1万円から制作可能。<br />
+                店舗集客にK-SLIM 59.8万円(税込)の屋外LEDサイネージ。<br />
+                映像制作も6万円〜10万円で対応可能。<br />
                 全てお任せの小型デジタルサイネージ専門店。
               </p>
               <div className="flex gap-4">
