@@ -179,10 +179,8 @@ export default function Home() {
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
               店舗集客に<br />
-              <span className="text-gradient block md:inline">K-SLIM</span>
-              <span className="text-gradient block md:inline md:ml-4">59.8万円</span><br />
-              <span className="block md:inline">屋外LED</span>
-              <span className="block md:inline md:ml-4">サイネージ</span>
+              <span className="text-gradient block">明るいLED<span className="md:hidden"><br /></span>サイネージ</span>
+              <span className="block">動く映像看板<span className="md:hidden"><br /></span>しませんか？</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10">
               映像制作も6万円〜10万円で<br className="md:hidden" />
